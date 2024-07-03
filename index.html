@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="img-container">
+        <div class="overlay">
+          <img src="odin-lined.png" alt="odin lined" />
+          <h1>Odin</h1>
+        </div>
+      </div>
+      <div class="sign-up-container">
+        <div class="text-within">
+          This is not a real service. You need something. Sign up
+          <em>now</em> to start.
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-container">
+          <div class="form-text">Lets do this!</div>
+
+          <form action="https://httpbin.org/post" method="post">
+            <div class="form-input">
+              <label for="first_name">First Name</label>
+              <input
+                type="text"
+                id="first_name"
+                placeholder="Bob"
+                name="first_name"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <label for="last_name">Last Name</label>
+              <input
+                type="text"
+                id="last_name"
+                placeholder="Le Sponge"
+                name="last_name"
+              />
+            </div>
+            <div class="form-input">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="name@example.com"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <label for="phone_number">Phone Number</label>
+              <input
+                type="number"
+                id="phone_number"
+                name="phone_number"
+                placeholder="0987 7654 321"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div class="form-input">
+              <label for="confirm_password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                required
+              />
+            </div>
+        </div>
+            <div class="button-area">
+              <button class="submit-button" type="submit">Create Account</button>
+              <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+          </form>
+        
+      </div>
+    </div>
+  </body>
+</html>
